@@ -3,7 +3,6 @@ public class Interface {
 
 	/**
 	 * @param args
-	 * David Snellings
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
