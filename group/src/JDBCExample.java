@@ -1,4 +1,4 @@
-import java.sql.*;
+/**import java.sql.*;
 
 public class JDBCExample {
    // JDBC driver name and database URL
@@ -14,7 +14,7 @@ public class JDBCExample {
    Statement stmt = null;
    try{
       //STEP 2: Register JDBC driver
-      Class.forName("com.mysql.jdbc.Driver");
+      Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
 
       //STEP 3: Open a connection
       System.out.println("Connecting to a selected database...");
@@ -60,3 +60,5 @@ public class JDBCExample {
    System.out.println("Goodbye!");
 }//end main
 }//end JDBCExample
+
+**/

@@ -7,17 +7,17 @@ public class Interface {
 	 * David Snellings
 	 * Brent Steffey
 	 */
-	/**public static void main(String[] args) {
+	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Interface i = new Interface();
-		i.connectToAndQueryDatabase("Kbrown","    ");
-	}**/
+		i.connectToAndQueryDatabase("dsnel0lx","secret");
+	}
 
 	public void connectToAndQueryDatabase(String username, String password) {
 
 		try{
 	    Connection con = DriverManager.getConnection(
-	                         "jdbc:mysql://localhost:3306/mydb",
+	                         "rosemary.umw.edu/~dsnel0lx/shared/mysql",
 	                         username,
 	                         password);
 	    System.out.println("HERE");
@@ -27,7 +27,9 @@ public class Interface {
 	    st.executeUpdate(table);
 	    System.out.println("Table creation process successfully!");
 	}
-		catch(SQLException e){}
+		catch(SQLException e){
+			System.out.println(e);
+		}
 	}
 	
 }
