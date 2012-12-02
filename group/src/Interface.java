@@ -1,3 +1,4 @@
+/**works for local server **/
 
 import java.sql.*;
 public class Interface {
@@ -17,7 +18,7 @@ public class Interface {
 
 		try{
 	    Connection con = DriverManager.getConnection(
-	                         "rosemary.umw.edu/~dsnel0lx/shared/mysql",
+	                         "jdbc:mysql://rosemary.umw.edu/~dsnel0lx/shared/mysql/S12-CPSC348_dsnel0lx",
 	                         username,
 	                         password);
 	    System.out.println("HERE");

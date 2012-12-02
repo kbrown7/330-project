@@ -1,3 +1,5 @@
+/** works connecting to my access DB **/
+
 import java.sql.*;
 public class Test
 {
@@ -5,8 +7,7 @@ public class Test
  {
  try {
 Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
-/* the next 3 lines are Step 2 method 2 from above - you could use the direct
-access method (Step 2 method 1) istead if you wanted */
+
 String dataSourceName = "Source";
 String dbURL = "jdbc:odbc:" + dataSourceName;
 Connection con = DriverManager.getConnection(dbURL, "",""); 
